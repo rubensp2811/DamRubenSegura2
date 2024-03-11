@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubo de Rubik</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/menu-desplegable.css">
+  <link rel="icon" type="image/x-icon" href="../imagenes/Logo.JPG">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="../imagenes/Logo.JPG" alt="Logo Cubo de Rubik">
+    <div id="titulo"><p><b>FANCUBE. Marcas recomendadas:</b></p></div>
+  </div>
+    <button id="menu-toggle" class="movil-solo">
+        <img src="../imagenes/logodesplegable.JPG" alt="Menú" width="35em">
+    </button>
+    <nav id="desktop-menu">
+      <ul>
+        <li><a href="../index.html">Historia</a></li>
+        <li><a href="modelos.html">Modelos</a></li>
+        <li><a href="metodos.html">Métodos</a></li>
+        <li><a href="marcas.html">Marcas Recomendadas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="menu-container" class="mobile-menu">
+    <h2>Menú</h2>
+    <hr>
+    <nav>
+    <ul>
+      <li><a href="../index.html">Historia</a></li>
+      <li><a href="modelos.html">Modelos</a></li>
+      <li><a href="metodos.html">Métodos</a></li>
+      <li><a href="marcas.html">Marcas Recomendadas</a></li>
+    </ul>
+  </nav>
+  </div>
+
+  <main>
+    <section>
+        <h1>GAN Cube</h1>
+    <section id="cubo-info2">
+      <div id="cubo-image2">
+        <img src="../imagenes/gancube.jpg" alt="Gancube">
+            <h2>La marca GAN es la marca mas prestigiosa dentro de los cubos de rubik, todos los profesionales usan esta marca e incluso les patrocinan.<br>
+            Ademas de ser la mas prestigiosa es la mas cara, sus cubos rondan entre los 40 y los 150 Euros.<br>
+             Son conocidos por su rendimiento excepcional y alta calidad.</h2>
+        </div>
+    </section>
+    <h3><a href="https://www.gancube.com/es/">Pagina Oficial GAN</a></h3>
+
+    <br><br>
+
+    <h1>QiYi Cube</h1>
+    <section id="cubo-info2">
+      <div id="cubo-image2">
+        <img src="../imagenes/qiyicube.jpeg" alt="qiyicube">
+            <h2>La marca QiYi es una marca famosa por su relacion-precio.<br>
+            Ofrece cubos con caracteristicas comparables a GAN a un precio mas asequible.<br>
+            Esta es una buena opcion si quieres un buen cubo sin gastarte tanto dinero.</h2>
+        </div>
+    </section>
+    <h3><a href="http://en.qiyitoys.net/">Pagina Oficial QiYi</a></h3>
+
+    <br><br>
+
+    <h1>Moyu Cube</h1>
+    <section id="cubo-info2">
+      <div id="cubo-image2">
+        <img src="../imagenes/moyucubejpg.jpg" alt="moyucube">
+            <h2>La marca Moyu es una marca reconocida por su innovación y diseños ergonómicos.<br>
+                Sus cubos Meilong son una excelente opción para principiantes, mientras que los modelos WR M son favoritos entre los speedcubers..<br>
+            Esta es tambien una muy buena opcion si quieres un buen cubo sin gastarte mucho dinero.</h2>
+        </div>
+    </section>
+    <h3><a href="http://www.moyucube.com/en/index.asp">Pagina Oficial Moyu</a></h3>
+    </section>
+
+    <section id="historia">
+        <h1>Formulario de registro</h1>
+        <h3>Si quieres suscribirte al foro rellena el siguiente formulario:</h3>
+        <form action="procesa.php" method="get">
+        <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">nombre:</label>
+        <input type="text" name="nombre" id="nombre" maxlength="50" required>
+        <br><br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="50" required>
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required>
+        <br><br>
+        <label for="sexo">Sexo:</label>
+<input type="radio" id="sexo" name="sexo" checked>Hombre
+<input type="radio" id="sexo" name="sexo">Mujer
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Datos de inicio de sesión</legend>
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" name="correo" required>
+        <br><br>
+        <label for="contraseña">Contraseña:</label> 
+        <input type="password" name="contraseña" id="contraseña" minlength="8" required>
+        </fieldset>
+        <br><br>
+        <input type="checkbox" name="recibirinfonovedades" checked>
+        <label>Deseo recibir informacion sobre novedades y ofertas</label>
+        <br><br>
+        <input type="checkbox" name="condicionesgenerales" required>
+        <label>Declaro haber leido y aceptar las condicicones generales del programa y la normativa sobre proteccion de datos</label>
+        <br><br>
+        <input type="submit">
+        <input type="reset" name="borrar" id="borrar" value="borrar datos">
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FANCUBE. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/menu-desplegable.js"></script>
+</body>
+</html>
